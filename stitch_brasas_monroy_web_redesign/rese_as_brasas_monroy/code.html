@@ -1,0 +1,267 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Reseñas - Brasas Monroy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#6e3900",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#b22222",
+                        "on-secondary": "#ffffff",
+                        "charcoal-black": "#2D2926",
+                        "outline-variant": "#e2beba",
+                        "surface-container-highest": "#e9e2d3",
+                        "on-tertiary-container": "#ffc8c5",
+                        "primary-fixed": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "background": "#fff8ef",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#ffdcc3",
+                        "on-surface": "#1e1b13",
+                        "surface-tint": "#b52424",
+                        "on-primary-container": "#ffc8c2",
+                        "primary": "#8f000d",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "surface": "#fff8ef",
+                        "inverse-surface": "#343026",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#e1d9cb",
+                        "outline": "#8e706d",
+                        "secondary-fixed-dim": "#ffb77d",
+                        "on-primary-fixed-variant": "#92030f",
+                        "surface-bright": "#fff8ef",
+                        "deep-wood": "#4A2C2A",
+                        "inverse-primary": "#ffb4ac",
+                        "on-secondary-container": "#603100",
+                        "tertiary-container": "#9f3a3c",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "surface-container": "#f5edde",
+                        "secondary-container": "#fd8b00",
+                        "on-secondary-fixed": "#2f1500",
+                        "surface-variant": "#e9e2d3",
+                        "surface-container-high": "#efe7d9",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#802226",
+                        "on-tertiary-fixed-variant": "#832428",
+                        "on-background": "#1e1b13",
+                        "secondary": "#904d00",
+                        "on-primary-fixed": "#410003",
+                        "tertiary-fixed": "#ffdad8",
+                        "on-surface-variant": "#5a403e",
+                        "surface-container-low": "#fbf3e4",
+                        "inverse-on-surface": "#f8f0e1",
+                        "peruvian-white": "#FFFFFF",
+                        "on-tertiary-fixed": "#410006",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "8px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Montserrat"],
+                        "label-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["36px", { "lineHeight": "42px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .glass-nav {
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col pt-20">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto bg-surface/80 dark:bg-surface-dim/80 backdrop-blur-md shadow-sm border-b-0 bg-surface-container-low/90 dark:bg-surface-container-high/90 scale-105 transition-transform" style="transform: scale(1);">
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim">
+            Brasas Monroy
+        </div>
+<div class="hidden md:flex space-x-6">
+<a class="font-body-lg text-body-lg tracking-wider text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#">Inicio</a>
+<a class="font-body-lg text-body-lg tracking-wider text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#">Menú</a>
+<a class="font-body-lg text-body-lg tracking-wider text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#">Sobre nosotros</a>
+<a class="font-body-lg text-body-lg tracking-wider text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#">Cómo llegar</a>
+<a class="font-body-lg text-body-lg tracking-wider text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#">Reseñas</a>
+</div>
+<div>
+<button class="bg-gradient-to-r from-primary to-secondary text-on-primary font-label-lg text-label-lg px-6 py-3 rounded-full shadow-md hover:-translate-y-1 transition-transform duration-300">
+                Reservar
+            </button>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12">
+<!-- Header Section -->
+<section class="text-center mb-16">
+<h1 class="font-headline-xl text-headline-xl text-deep-wood mb-4">Lo que dicen nuestros clientes</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8">
+                Tu opinión es el carbón que mantiene viva nuestra llama. Comparte tu experiencia auténtica peruana con nosotros y con el mundo.
+            </p>
+<div class="flex flex-col items-center justify-center bg-peruvian-white p-8 rounded-xl shadow-lg shadow-deep-wood/5 border border-outline-variant/10 max-w-md mx-auto relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-surface-container-low to-transparent opacity-50"></div>
+<div class="relative z-10 flex flex-col items-center">
+<span class="font-headline-xl text-headline-xl text-primary mb-2">4,8</span>
+<div class="flex space-x-1 text-secondary-container mb-2">
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-4xl" style="font-variation-settings: 'FILL' 1;">star_half</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant mb-6">Basado en más de 500 reseñas</span>
+<button class="bg-surface-container-lowest border-2 border-outline text-on-surface font-label-lg text-label-lg px-6 py-3 rounded-full hover:border-secondary hover:text-secondary transition-colors duration-300 flex items-center gap-2 group">
+<img alt="Google" class="w-5 h-5 object-contain" data-alt="Google G logo icon, clean, modern, flat design, recognizable branding element for leaving reviews." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm_JTklQFf9H5kLJ-YDcFF21rP5wyQKSrlXHWY-52pZNi0xyu0SGa9kbQJTvJTigQ_SjWTwhRGmItdw7Z2FdVOHGIYKV3prtmMqZPY7m4lzoXRBg1zXiP-FIgTSzc7LKjsYwbazS_v5FYzp05omW-mzzD3SWS_Clm4mznmykh5kH2oDEEJ_0d-VSwhGcOmlEtz4VxB4hXKDalEo_6WqZtqBJtgBEdrzrf8ALHCGXKSpRRhAzWVKhVS">
+                        Dejar reseña en Google
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Reviews Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Review 1 -->
+<article class="bg-peruvian-white rounded-xl shadow-lg shadow-deep-wood/5 border border-outline-variant/10 p-6 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center font-headline-md text-headline-md text-primary">M</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">María G.</h3>
+<div class="flex text-secondary-container text-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-4">
+                    "El mejor pollo a la brasa que he probado fuera de Lima. La piel estaba crujiente y la carne jugosa. Las papas fritas y la crema de ají son un viaje directo a Perú. ¡Volveremos sin duda!"
+                </p>
+<div class="h-40 w-full rounded-lg overflow-hidden mt-auto">
+<img class="w-full h-full object-cover" data-alt="Close up photography of a mouthwatering golden-brown Peruvian rotisserie chicken (Pollo a la Brasa) with crispy skin, served alongside golden thick-cut french fries and a small bowl of vibrant green aji sauce on a rustic wooden table with warm, inviting lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUQNIUmnRd_-_PutyJ-PQofQ2xdhNKViLfTvzMqCOGad10raInMxe61-YXCpEIB3YerMW3D4tVUddlX7xuCH-6vZnps-pNpsRLMNX7igc1Ss8b2pPxDuWfXvDrmIbQwyWowkEZQu7LRM9sAvIRnPGZZgEO-F9pyJFK0J45kf4eMHkPYvjnUNFdBrEGn3fzT3GVcsUZRu1pOSa3nYn07odvWwtwst1wL8oF_3TGv_jXlsZ2qVr0gEhO">
+</div>
+</article>
+<!-- Review 2 -->
+<article class="bg-peruvian-white rounded-xl shadow-lg shadow-deep-wood/5 border border-outline-variant/10 p-6 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center font-headline-md text-headline-md text-primary">C</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Carlos D.</h3>
+<div class="flex text-secondary-container text-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star_half</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-4">
+                    "Ambiente muy acogedor, ideal para ir en familia. Pedimos un lomo saltado además del pollo y estaba espectacular. La chicha morada estaba en su punto. El servicio muy atento."
+                </p>
+<div class="h-40 w-full rounded-lg overflow-hidden mt-auto">
+<img class="w-full h-full object-cover" data-alt="High quality food photography of traditional Peruvian Lomo Saltado, featuring tender strips of beef stir-fried with red onions, tomatoes, and french fries, served with a side of white rice on a rustic ceramic plate, warm restaurant atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxKfRx5Jr0u80QL065P5PehdrinY1neVB_UYwkQBJ9biLtGgTZwACphYo9VOkOYFkuzZYPJMzegx-zEaih4yWD5BT4WUvCkZvx06IBJYnB3ROvklPvEcuPT0io2Jpu256zRL6lB5e5GhhOxF9faIf4dbfqCKupTC1gYlTfwne7v44HM_k_oTFaBZuyre8aUkDTeDYsA26qbnkEyMfNaBJ4NVqFIbEstrT8s4OlQ6u_GmqWyyLP9O0n">
+</div>
+</article>
+<!-- Review 3 -->
+<article class="bg-peruvian-white rounded-xl shadow-lg shadow-deep-wood/5 border border-outline-variant/10 p-6 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center font-headline-md text-headline-md text-primary">A</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Ana L.</h3>
+<div class="flex text-secondary-container text-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-4">
+                    "Increíble sabor. Se nota que usan carbón de verdad. Las porciones son generosas y el precio es justo para la calidad que ofrecen. Recomiendo reservar antes porque se llena rápido."
+                </p>
+<!-- No image for this review to vary layout -->
+</article>
+<!-- Review 4 -->
+<article class="bg-peruvian-white rounded-xl shadow-lg shadow-deep-wood/5 border border-outline-variant/10 p-6 flex flex-col h-full hover:-translate-y-1 transition-transform duration-300 md:col-span-2 lg:col-span-1">
+<div class="flex items-center gap-4 mb-4">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center font-headline-md text-headline-md text-primary">J</div>
+<div>
+<h3 class="font-label-lg text-label-lg text-on-surface">Juan P.</h3>
+<div class="flex text-secondary-container text-sm">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star_outline</span>
+</div>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow mb-4">
+                    "Muy buena comida. Los anticuchos de entrada estaban tiernos y bien sazonados. El ambiente es un poco ruidoso en hora punta, pero vale la pena por la comida."
+                </p>
+<div class="h-40 w-full rounded-lg overflow-hidden mt-auto">
+<img class="w-full h-full object-cover" data-alt="Appetizing close-up of Peruvian Anticuchos, grilled beef heart skewers sizzling on a charcoal grill, garnished with sliced potatoes and a side of yellow rocoto pepper sauce, smoky atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo1hwJmnwnqtBKBABPQ7pWrXbkQXyd0lUfMsD8tTMami0vKgY7_0Bai5EUe2oIL-TRDmd2XH7hOLW269-TNZYUlsOER--GsW6oOMDse9SFcog5E9lu41AWUkavZ03dFjSRylWANiBI4iseNQ-i_jCr6B4COuYgq-BrPJwL_7AU-pyXy6redGVIfo4lmA__Jns35916mNJ2UVqkftFu1FWt6ILIGyIYtrmJygfilKh4d_PBiMzFskW7">
+</div>
+</article>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-deep-wood dark:bg-surface-container-lowest border-t border-outline-variant/20 mt-auto opacity-90 hover:opacity-100 transition-opacity">
+<div class="md:col-span-1 flex flex-col items-start justify-center">
+<div class="font-headline-lg text-headline-lg text-secondary-container mb-4">
+                Brasas Monroy
+            </div>
+<p class="font-body-md text-body-md text-peruvian-white dark:text-on-surface">
+                © 2024 Brasas Monroy. Sabor Auténtico Peruano.
+            </p>
+</div>
+<div class="md:col-span-3 flex flex-wrap gap-x-8 gap-y-4 items-center justify-start md:justify-end">
+<a class="font-body-md text-body-md text-peruvian-white/80 hover:text-secondary-fixed transition-colors" href="#">Privacidad</a>
+<a class="font-body-md text-body-md text-peruvian-white/80 hover:text-secondary-fixed transition-colors" href="#">Aviso Legal</a>
+<a class="font-body-md text-body-md text-peruvian-white/80 hover:text-secondary-fixed transition-colors" href="#">Cookies</a>
+<a class="font-body-md text-body-md text-peruvian-white/80 hover:text-secondary-fixed transition-colors" href="#">Contacto</a>
+</div>
+</footer>
+</body></html>

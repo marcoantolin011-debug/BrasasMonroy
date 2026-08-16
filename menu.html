@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Menú y Carta - Brasas Monroy</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#6e3900",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#b22222",
+                        "on-secondary": "#ffffff",
+                        "charcoal-black": "#2D2926",
+                        "outline-variant": "#e2beba",
+                        "surface-container-highest": "#e9e2d3",
+                        "on-tertiary-container": "#ffc8c5",
+                        "primary-fixed": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "background": "#fff8ef",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#ffdcc3",
+                        "on-surface": "#1e1b13",
+                        "surface-tint": "#b52424",
+                        "on-primary-container": "#ffc8c2",
+                        "primary": "#8f000d",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "surface": "#fff8ef",
+                        "inverse-surface": "#343026",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#e1d9cb",
+                        "outline": "#8e706d",
+                        "secondary-fixed-dim": "#ffb77d",
+                        "on-primary-fixed-variant": "#92030f",
+                        "surface-bright": "#fff8ef",
+                        "deep-wood": "#4A2C2A",
+                        "inverse-primary": "#ffb4ac",
+                        "on-secondary-container": "#603100",
+                        "tertiary-container": "#9f3a3c",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "surface-container": "#f5edde",
+                        "secondary-container": "#fd8b00",
+                        "on-secondary-fixed": "#2f1500",
+                        "surface-variant": "#e9e2d3",
+                        "surface-container-high": "#efe7d9",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#802226",
+                        "on-tertiary-fixed-variant": "#832428",
+                        "on-background": "#1e1b13",
+                        "secondary": "#904d00",
+                        "on-primary-fixed": "#410003",
+                        "tertiary-fixed": "#ffdad8",
+                        "on-surface-variant": "#5a403e",
+                        "surface-container-low": "#fbf3e4",
+                        "inverse-on-surface": "#f8f0e1",
+                        "peruvian-white": "#FFFFFF",
+                        "on-tertiary-fixed": "#410006",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "8px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Montserrat", "sans-serif"],
+                        "label-lg": ["Montserrat", "sans-serif"],
+                        "body-md": ["Montserrat", "sans-serif"],
+                        "label-sm": ["Montserrat", "sans-serif"],
+                        "headline-md": ["Playfair Display", "serif"],
+                        "headline-xl-mobile": ["Playfair Display", "serif"],
+                        "headline-lg": ["Playfair Display", "serif"],
+                        "headline-xl": ["Playfair Display", "serif"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["36px", { "lineHeight": "42px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #fdf5e6;
+        }
+        
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(74, 44, 42, 0.05), 0 4px 6px -2px rgba(74, 44, 42, 0.025);
+        }
+
+        .btn-gradient {
+            background: linear-gradient(135deg, #8f000d 0%, #fd8b00 100%);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(143, 0, 13, 0.3);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .glass-nav {
+            background-color: rgba(253, 245, 230, 0.9);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="text-on-surface font-body-md antialiased bg-background overflow-x-hidden">
+    <!-- Top Navigation -->
+    <nav class="glass-nav shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto border-b border-surface-container-high" id="mainNav">
+        <!-- Brand -->
+        <a class="font-headline-md text-headline-md font-bold text-primary hover:scale-105 transition-transform flex items-center gap-2" href="index.html">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+            Brasas Monroy
+        </a>
+        <!-- Desktop Links -->
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="font-body-lg text-body-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="index.html">Inicio</a>
+            <a class="font-body-lg text-body-lg uppercase tracking-wider text-primary border-b-2 border-primary pb-1 font-semibold transition-colors duration-300" href="menu.html">Menú</a>
+            <a class="font-body-lg text-body-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="sobre-nosotros.html">Sobre nosotros</a>
+            <a class="font-body-lg text-body-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="como-llegar.html">Cómo llegar</a>
+            <a class="font-body-lg text-body-lg uppercase tracking-wider text-on-surface-variant hover:text-primary transition-colors duration-300" href="resenas.html">Reseñas</a>
+        </div>
+        <!-- Trailing Action -->
+        <div class="hidden md:block">
+            <a class="btn-gradient text-white px-6 py-3 rounded-full font-label-lg text-label-lg uppercase tracking-wider inline-flex items-center gap-2 hover:scale-105 transition-transform" href="tel:+34942409094">
+                Reservar
+                <span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+            </a>
+        </div>
+        <!-- Mobile Menu Toggle -->
+        <button class="md:hidden text-primary p-2" id="mobileMenuBtn" aria-label="Abrir menú">
+            <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="fixed inset-0 bg-background/95 backdrop-blur-xl z-40 hidden flex-col items-center justify-center gap-8 pt-20 px-margin-mobile" id="mobileNav">
+        <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="index.html" onclick="toggleMobileMenu()">Inicio</a>
+        <a class="font-headline-md text-headline-md text-primary font-bold" href="menu.html" onclick="toggleMobileMenu()">Menú</a>
+        <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="sobre-nosotros.html" onclick="toggleMobileMenu()">Sobre nosotros</a>
+        <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="como-llegar.html" onclick="toggleMobileMenu()">Cómo llegar</a>
+        <a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary" href="resenas.html" onclick="toggleMobileMenu()">Reseñas</a>
+        <a class="btn-gradient text-white px-8 py-4 rounded-full font-label-lg text-label-lg mt-4 w-full max-w-xs text-center inline-flex items-center justify-center gap-2" href="tel:+34942409094" onclick="toggleMobileMenu()">
+            <span class="material-symbols-outlined">call</span>
+            Reservar (942 40 90 94)
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="pt-32 pb-24 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-16">
+        <!-- Header Section -->
+        <section class="text-center space-y-4">
+            <span class="text-secondary-container font-label-lg text-label-lg mb-2 uppercase tracking-[0.2em] bg-charcoal-black/10 px-4 py-1 rounded-full border border-secondary-container/30 inline-block">Gastronomía Peruana</span>
+            <h1 class="font-headline-xl text-headline-xl text-primary font-bold">Nuestra Carta</h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Descubre el auténtico sabor del Perú. Cada plato es una celebración de nuestra herencia culinaria, preparado con pasión y los ingredientes más frescos.
+            </p>
+            <!-- Category Navigation -->
+            <div class="flex flex-wrap justify-center gap-4 mt-8">
+                <a class="px-6 py-2 rounded-full border-2 border-primary bg-primary text-white font-semibold transition-all shadow-sm" href="#entrantes">Entrantes</a>
+                <a class="px-6 py-2 rounded-full border-2 border-primary/40 text-on-surface hover:border-primary hover:text-primary transition-all" href="#principales">Principales</a>
+                <a class="px-6 py-2 rounded-full border-2 border-primary/40 text-on-surface hover:border-primary hover:text-primary transition-all" href="#bebidas">Bebidas y Más</a>
+            </div>
+        </section>
+
+        <!-- Entrantes -->
+        <section class="scroll-mt-32" id="entrantes">
+            <h2 class="font-headline-lg text-headline-lg text-deep-wood border-b border-outline-variant/30 pb-4 mb-8 font-bold flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary">tapas</span>
+                Entrantes y Aperitivos
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Papa a la Huancaina -->
+                <article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group border border-outline-variant/20 hover:-translate-y-1 transition-all">
+                    <div class="h-48 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Papas a la Huancaína" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI7I6pM7o01ZCXPwJeLoFor7-upMt-do6MXpO6EQLvxSL5QYyZfI_TLDJsYJQrXqwPXV3brs_3vysFfUfP3XSz5EIcrEtX27CSjxaztYHE_Ai1aL8kFCokqLoMfR9tRRNK5lbDtHTwzJMRAXl8xBgf62Zv0EIG7z4Gy-0g8tD0wZ0kB3ygMUn1UK52DSXo6WprPrr709_-8QemF1Kpf2ziH_BAXdknSDer7In7I88J1GLJ2aeNV_Um">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline-md text-headline-md text-on-surface font-bold">Papas a la Huancaína</h3>
+                            <span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4 font-bold">9.50 €</span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Rodajas de papa sancochada cubiertas con una cremosa salsa de ají amarillo, queso fresco y leche. Acompañada de huevo duro y aceitunas.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Lácteos</span>
+                            <span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Huevo</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tamales -->
+                <article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group border border-outline-variant/20 hover:-translate-y-1 transition-all">
+                    <div class="h-48 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Tamales Peruanos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrtzwUXlh5pxMQwPzIqgsCBZNBmEWK9aXTl-Ai_x4m6M8J_SEYKIwgDDecv62P_oK4-OI523JQeOtRwishldJNlN1M6u8tMdxpaHwBexBsV7dhAnsj0p581VMOvJfeXykqkcEHc76TYhdaoQmxSc9Pqq634G117hJdaTTEThxPkQqSpmA2N1rK-pqEMNDF61Lse4sT0yvewpX8VPFwBnKVT9TaPvgRNP-muwfBTs9MSL-np7iFCHnh">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline-md text-headline-md text-on-surface font-bold">Tamales Peruanos</h3>
+                            <span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4 font-bold">8.00 €</span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Masa de maíz rellena de carne de cerdo o pollo, huevo duro, aceitunas y maní, envuelta en hoja de plátano con salsa criolla.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Maní</span>
+                            <span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Huevo</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Anticuchos -->
+                <article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group border border-outline-variant/20 hover:-translate-y-1 transition-all">
+                    <div class="h-48 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Anticuchos Tradicionales" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo1hwJmnwnqtBKBABPQ7pWrXbkQXyd0lUfMsD8tTMami0vKgY7_0Bai5EUe2oIL-TRDmd2XH7hOLW269-TNZYUlsOER--GsW6oOMDse9SFcog5E9lu41AWUkavZ03dFjSRylWANiBI4iseNQ-i_jCr6B4COuYgq-BrPJwL_7AU-pyXy6redGVIfo4lmA__Jns35916mNJ2UVqkftFu1FWt6ILIGyIYtrmJygfilKh4d_PBiMzFskW7">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline-md text-headline-md text-on-surface font-bold">Anticuchos a la Brasa</h3>
+                            <span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4 font-bold">11.50 €</span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Brochetas maceradas en ají panca, comino y vinagre, asadas al carbón servidas con patata dorada y crema de rocoto.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Salsa Ají</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Principales -->
+        <section class="scroll-mt-32" id="principales">
+            <h2 class="font-headline-lg text-headline-lg text-deep-wood border-b border-outline-variant/30 pb-4 mb-8 font-bold flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">outdoor_grill</span>
+                Platos Principales y Especialidades
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+                <!-- Pollo a la Brasa -->
+                <article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group border-2 border-primary/30 hover:-translate-y-1 transition-all relative">
+                    <div class="absolute top-4 right-4 z-10 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Especialidad
+                    </div>
+                    <div class="h-56 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Pollo a la Brasa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA2Nj7inzFUjp5_61wUKEXlUlSa0872ot33dZ1UI_hQ0jM9EFJdOIwB2T4AQfHQZ5gD-1hoeAsuANwgvUOGN0m9IkS9sMQCPCAHd2RcF2l335b3Gmm3IJjR9bzd_RQyT2Ta6Ygz4AS7voMDacoY6OJ4RjJoHsXUsBadrO5LzBL3wl_PIZpDvr2UqsAJsqjMXdUQeLhHhwoqD-jNDgC3akKWXiTD0-PzX9_3E50tSSrnXPR2kZxZIRs">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline-md text-headline-md text-primary font-bold">Pollo a la Brasa</h3>
+                            <span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4 font-bold text-lg">16.50 €</span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Nuestro plato estrella. Pollo marinado al carbón con receta secreta de especias peruanas, servido con abundantes patatas fritas crujientes, ensalada fresca y salsas caseras.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Soja (salsas)</span>
+                            <span class="bg-secondary-container text-white px-2 py-1 rounded font-label-sm text-label-sm">Al Carbón</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Lomo Saltado -->
+                <article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group border border-outline-variant/20 hover:-translate-y-1 transition-all">
+                    <div class="h-56 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Lomo Saltado" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1Stf7BGO5Hsv0lqIlZe9NxgLHpX5uQNRbGTXwd4jWLybF7tSJMmGpmh9wVUb0-b-CF74NmpCr6MHAZxxLX7Wu_3LMaiyvPq9xIcal1X-nc_sFciV6d9UMWnOiMkGlb_7yzQOfZbESHoDyjz4RgojBzqMFUVcMUYMaY20cyA2eUL6PVatzioVeGGlYrGtVy-kx6SaKuAURpODkgmV51o8Wm_gpjRbo526cdVOKTu4MVzU1uGt9gIxs">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline-md text-headline-md text-on-surface font-bold">Lomo Saltado</h3>
+                            <span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4 font-bold text-lg">18.00 €</span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Trozos de solomillo de ternera salteados al wok con cebolla roja, tomates frescos y ají amarillo, aderezados con salsa de soja. Servido con patatas fritas y arroz blanco.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Soja</span>
+                            <span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Gluten</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Arroz con Pollo -->
+                <article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group border border-outline-variant/20 hover:-translate-y-1 transition-all">
+                    <div class="h-56 overflow-hidden">
+                        <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Arroz con Pollo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMqrPAkVdAaWmvzW2ljQCcSAYIWtqrTyF034azneetdA1jAZZF1QIDQq-3pHSWBiSZMZ4WIFkcQNH8lN5Ap3z5cw1zApP57Rdfw9tnEvrlVVQt4fRCF-nJh_PkLs2lgWT1dJhbpXZ3APwDWLR7Tae9od1A9o_dBSgjsl9Mm687OEb5M02262OYgOSXVNo9XKRRNK59Vofdwhs6yT1kFIquhh1nja5hVWZznhR6duo6ymJMMkigkwJk">
+                    </div>
+                    <div class="p-6 flex-grow flex flex-col">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-headline-md text-headline-md text-on-surface font-bold">Arroz con Pollo</h3>
+                            <span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4 font-bold text-lg">15.50 €</span>
+                        </div>
+                        <p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Clásico peruano: arroz graneado cocido con un aderezo de cilantro fresco, chicha de jora, zanahorias, guisantes y pimientos, acompañado de tierna presa de pollo y salsa criolla.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Sin Gluten</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Bebidas y Postres -->
+        <section class="scroll-mt-32" id="bebidas">
+            <h2 class="font-headline-lg text-headline-lg text-deep-wood border-b border-outline-variant/30 pb-4 mb-8 font-bold flex items-center gap-3">
+                <span class="material-symbols-outlined text-secondary">local_bar</span>
+                Bebidas y Postres Tradicionales
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <div class="bg-peruvian-white p-6 rounded-xl card-shadow border border-outline-variant/20">
+                    <h3 class="font-headline-md text-headline-md text-primary font-bold mb-2">Chicha Morada Casera</h3>
+                    <p class="font-body-md text-on-surface-variant mb-3">Refrescante bebida tradicional elaborada con maíz morado, piña, manzana, canela y clavo.</p>
+                    <span class="font-bold text-secondary text-lg">3.50 € / Jarra 9.00 €</span>
+                </div>
+                <div class="bg-peruvian-white p-6 rounded-xl card-shadow border border-outline-variant/20">
+                    <h3 class="font-headline-md text-headline-md text-primary font-bold mb-2">Inca Kola</h3>
+                    <p class="font-body-md text-on-surface-variant mb-3">El refresco peruano de sabor inconfundible por excelencia. Servido bien frío.</p>
+                    <span class="font-bold text-secondary text-lg">3.00 €</span>
+                </div>
+                <div class="bg-peruvian-white p-6 rounded-xl card-shadow border border-outline-variant/20">
+                    <h3 class="font-headline-md text-headline-md text-primary font-bold mb-2">Suspiro Limeño / Alfajores</h3>
+                    <p class="font-body-md text-on-surface-variant mb-3">Deliciosos postres caseros de manjar blanco, merengue al oporto y suave masa de maicena.</p>
+                    <span class="font-bold text-secondary text-lg">5.50 €</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Reserva -->
+        <div class="bg-surface-container-highest p-8 md:p-12 rounded-2xl text-center max-w-3xl mx-auto border border-outline-variant/40">
+            <h3 class="font-headline-lg text-headline-lg text-deep-wood font-bold mb-4">¿Te apetece disfrutar de estos platos hoy?</h3>
+            <p class="font-body-lg text-on-surface-variant mb-6">Reserva tu mesa en sala o encarga tu pedido para recoger en nuestro local de Astillero.</p>
+            <a class="btn-gradient text-white px-8 py-4 rounded-full font-label-lg text-label-lg inline-flex items-center gap-2" href="tel:+34942409094">
+                <span class="material-symbols-outlined">call</span>
+                Llamar para Reservar (942 40 90 94)
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-deep-wood w-full py-12 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter border-t border-outline-variant/20 text-peruvian-white">
+        <div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+            <span class="font-headline-lg text-headline-lg text-secondary-container font-bold flex items-center gap-2">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                Brasas Monroy
+            </span>
+            <p class="text-peruvian-white/80 mt-4 max-w-xs">El auténtico sabor del pollo a la brasa peruano, asado lentamente con pasión y tradición.</p>
+        </div>
+        <div class="col-span-1 md:col-span-2 flex flex-col md:flex-row justify-center gap-8 md:gap-12 items-start md:items-center">
+            <a class="text-peruvian-white/80 hover:text-secondary-fixed transition-colors" href="index.html">Inicio</a>
+            <a class="text-peruvian-white/80 hover:text-secondary-fixed transition-colors" href="menu.html">Menú</a>
+            <a class="text-peruvian-white/80 hover:text-secondary-fixed transition-colors" href="sobre-nosotros.html">Sobre nosotros</a>
+            <a class="text-peruvian-white/80 hover:text-secondary-fixed transition-colors" href="como-llegar.html">Cómo llegar</a>
+            <a class="text-peruvian-white/80 hover:text-secondary-fixed transition-colors" href="resenas.html">Reseñas</a>
+        </div>
+        <div class="col-span-1 flex flex-col items-start md:items-end justify-center">
+            <p class="text-peruvian-white/90 font-semibold mb-1">Calle Prosperidad 2, Astillero</p>
+            <p class="text-secondary-container font-bold mb-2">Tel: 942 40 90 94</p>
+            <p class="text-peruvian-white/60 text-sm">© 2026 Brasas Monroy.</p>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        let menuOpen = false;
+
+        function toggleMobileMenu() {
+            menuOpen = !menuOpen;
+            if (menuOpen) {
+                mobileNav.classList.remove('hidden');
+                mobileNav.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+                mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-3xl">close</span>';
+            } else {
+                mobileNav.classList.add('hidden');
+                mobileNav.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+                mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-3xl">menu</span>';
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.style.background = 'rgba(253, 245, 230, 0.98)';
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.style.background = 'rgba(253, 245, 230, 0.9)';
+            }
+        });
+    </script>
+</body>
+</html>

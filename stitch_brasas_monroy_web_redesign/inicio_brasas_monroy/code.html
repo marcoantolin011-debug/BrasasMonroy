@@ -1,0 +1,295 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Brasas Monroy - El auténtico Pollo a la Brasa Peruano</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#6e3900",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#b22222",
+                        "on-secondary": "#ffffff",
+                        "charcoal-black": "#2D2926",
+                        "outline-variant": "#e2beba",
+                        "surface-container-highest": "#e9e2d3",
+                        "on-tertiary-container": "#ffc8c5",
+                        "primary-fixed": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "background": "#fff8ef",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#ffdcc3",
+                        "on-surface": "#1e1b13",
+                        "surface-tint": "#b52424",
+                        "on-primary-container": "#ffc8c2",
+                        "primary": "#8f000d",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "surface": "#fff8ef",
+                        "inverse-surface": "#343026",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#e1d9cb",
+                        "outline": "#8e706d",
+                        "secondary-fixed-dim": "#ffb77d",
+                        "on-primary-fixed-variant": "#92030f",
+                        "surface-bright": "#fff8ef",
+                        "deep-wood": "#4A2C2A",
+                        "inverse-primary": "#ffb4ac",
+                        "on-secondary-container": "#603100",
+                        "tertiary-container": "#9f3a3c",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "surface-container": "#f5edde",
+                        "secondary-container": "#fd8b00",
+                        "on-secondary-fixed": "#2f1500",
+                        "surface-variant": "#e9e2d3",
+                        "surface-container-high": "#efe7d9",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#802226",
+                        "on-tertiary-fixed-variant": "#832428",
+                        "on-background": "#1e1b13",
+                        "secondary": "#904d00",
+                        "on-primary-fixed": "#410003",
+                        "tertiary-fixed": "#ffdad8",
+                        "on-surface-variant": "#5a403e",
+                        "surface-container-low": "#fbf3e4",
+                        "inverse-on-surface": "#f8f0e1",
+                        "peruvian-white": "#FFFFFF",
+                        "on-tertiary-fixed": "#410006",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "8px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Montserrat"],
+                        "label-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["36px", { "lineHeight": "42px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Glassmorphism for Nav */
+        .glass-nav {
+            background: rgba(253, 245, 230, 0.85);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        
+        /* Custom Gradient for Primary Buttons */
+        .btn-gradient {
+            background: linear-gradient(135deg, #8f000d 0%, #fd8b00 100%);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(143, 0, 13, 0.3);
+        }
+        
+        /* Soft Shadow for Cards */
+        .ambient-shadow {
+            box-shadow: 0 15px 30px rgba(74, 44, 42, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto glass-nav transition-all duration-300 shadow-sm border-b border-surface-container-high" id="mainNav">
+<!-- Brand -->
+<a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim hover:scale-105 transition-transform flex items-center gap-2" href="#">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">restaurant_menu</span>
+            Brasas Monroy
+        </a>
+<!-- Desktop Navigation Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-lg text-body-lg uppercase tracking-wider text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#inicio">Inicio</a>
+<a class="font-body-lg text-body-lg uppercase tracking-wider text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#menu">Menú</a>
+<a class="font-body-lg text-body-lg uppercase tracking-wider text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#nosotros">Sobre nosotros</a>
+<a class="font-body-lg text-body-lg uppercase tracking-wider text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#ubicacion">Cómo llegar</a>
+<a class="font-body-lg text-body-lg uppercase tracking-wider text-on-surface-variant dark:text-on-secondary-fixed-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300" href="#resenas">Reseñas</a>
+</div>
+<!-- Trailing Action -->
+<div class="hidden md:block">
+<a class="btn-gradient text-white px-6 py-3 rounded-full font-label-lg text-label-lg hover:scale-105 transition-transform inline-flex items-center gap-2" href="#reservar">
+                Reservar
+                <span class="material-symbols-outlined" style="font-size: 18px;">arrow_forward</span>
+</a>
+</div>
+<!-- Mobile Menu Toggle -->
+<button class="md:hidden text-primary p-2" id="mobileMenuBtn">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</nav>
+<!-- Mobile Nav Overlay (Hidden by default) -->
+<div class="fixed inset-0 bg-background/95 backdrop-blur-xl z-40 hidden flex-col items-center justify-center gap-8 pt-20 px-margin-mobile" id="mobileNav">
+<a class="font-headline-md text-headline-md text-primary" href="#inicio" onclick="toggleMobileMenu()">Inicio</a>
+<a class="font-headline-md text-headline-md text-on-surface-variant" href="#menu" onclick="toggleMobileMenu()">Menú</a>
+<a class="font-headline-md text-headline-md text-on-surface-variant" href="#nosotros" onclick="toggleMobileMenu()">Sobre nosotros</a>
+<a class="font-headline-md text-headline-md text-on-surface-variant" href="#ubicacion" onclick="toggleMobileMenu()">Cómo llegar</a>
+<a class="btn-gradient text-white px-8 py-4 rounded-full font-label-lg text-label-lg mt-8 w-full text-center" href="#reservar" onclick="toggleMobileMenu()">Reservar</a>
+</div>
+<!-- 1. Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden" id="inicio">
+<!-- Background Image with Overlay -->
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full" data-alt="A spectacular, high-resolution close-up of a whole, golden-brown roasted Peruvian Pollo a la Brasa, glistening with juices and aromatic spices, resting on a rustic wooden board over glowing red charcoal embers. Smoke gently rises against a dark, moody charcoal background, highlighting the authentic, passionate, and cozy atmosphere of a traditional Peruvian rotisserie. Warm, dramatic lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDgqe1TmgSrSBiyEc14-q-5je5D6EUJO-dWI9SZFlt8tqdFQJWaL_Q2PKFrOndpXO3wtF3Ff7ZC7f_tIEjYvfv_qkqk4thG0_x-BG3uIyqmlMP-a2JDQBANfTK9Yrp7X7gSCE7q3u-A1DofpmeiEfFoU2SFcu0Ot1adL2POiK9ge2gvMLi22L8hJW8yALHFURWCmdnQKw-P8hXsvfnVM-Yx6kPPuCUsWqAO2W4C2kSyEmUhCttnQWF1')"></div>
+<!-- Dark Overlay to ensure text readability -->
+<div class="absolute inset-0 bg-charcoal-black/60 bg-gradient-to-t from-background via-charcoal-black/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop text-center flex flex-col items-center">
+<span class="text-secondary-container font-label-lg text-label-lg mb-4 uppercase tracking-[0.2em] bg-charcoal-black/50 px-4 py-1 rounded-full backdrop-blur-sm border border-secondary-container/30">Sabor Auténtico</span>
+<h1 class="font-headline-xl-mobile md:font-headline-xl text-headline-xl-mobile md:text-headline-xl text-peruvian-white mb-6 max-w-4xl text-shadow-lg drop-shadow-2xl">
+                El auténtico Pollo a la Brasa Peruano en el corazón de Astillero
+            </h1>
+<p class="font-body-lg text-body-lg text-peruvian-white/90 mb-10 max-w-2xl">
+                Descubre el sabor único de nuestro pollo marinado con especias peruanas y asado lentamente al carbón.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+<a class="btn-gradient text-white px-8 py-4 rounded-full font-label-lg text-label-lg text-center flex items-center justify-center gap-2" href="#reservar">
+<span class="material-symbols-outlined">event_seat</span>
+                    Reservar mesa
+                </a>
+<a class="bg-surface/10 hover:bg-surface/20 text-peruvian-white backdrop-blur-md border border-peruvian-white/30 px-8 py-4 rounded-full font-label-lg text-label-lg text-center transition-colors flex items-center justify-center gap-2" href="#menu">
+<span class="material-symbols-outlined">restaurant</span>
+                    Ver la carta
+                </a>
+</div>
+</div>
+</section>
+<!-- 2. Value Proposition -->
+<section class="py-20 bg-background relative z-20 -mt-10">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Feature 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow flex flex-col items-center text-center transform transition-transform hover:-translate-y-2 border border-surface-container-high">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">outdoor_grill</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-deep-wood mb-3">Cocina de Autor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Recetas tradicionales elevadas con técnicas modernas para una experiencia inolvidable.</p>
+</div>
+<!-- Feature 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow flex flex-col items-center text-center transform transition-transform hover:-translate-y-2 border border-surface-container-high">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 text-secondary-container">
+<span class="material-symbols-outlined text-3xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-deep-wood mb-3">Producto Fresco</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Seleccionamos ingredientes locales de la más alta calidad cada día.</p>
+</div>
+<!-- Feature 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow flex flex-col items-center text-center transform transition-transform hover:-translate-y-2 border border-surface-container-high">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 text-primary">
+<span class="material-symbols-outlined text-3xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">home_work</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-deep-wood mb-3">Ambiente Acogedor</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Un espacio cálido inspirado en la madera y el fuego, ideal para compartir.</p>
+</div>
+<!-- Feature 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl ambient-shadow flex flex-col items-center text-center transform transition-transform hover:-translate-y-2 border border-surface-container-high">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-6 text-secondary-container">
+<span class="material-symbols-outlined text-3xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">public</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-deep-wood mb-3">Sabor Peruano</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">El verdadero ají, comino y especias que nos transportan directamente a Lima.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer Component -->
+<footer class="w-full py-12 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter bg-deep-wood dark:bg-surface-container-lowest text-peruvian-white dark:text-on-surface font-body-md text-body-md border-t border-outline-variant/20">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<span class="font-headline-lg text-headline-lg text-secondary-container font-bold flex items-center gap-2">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+                Brasas Monroy
+            </span>
+<p class="text-peruvian-white/80 mt-4 max-w-xs">El auténtico sabor del pollo a la brasa peruano, asado lentamente con pasión y tradición.</p>
+</div>
+<div class="col-span-1 md:col-span-2 flex flex-col md:flex-row justify-center gap-8 md:gap-16 items-start md:items-center">
+<a class="text-peruvian-white/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Privacidad</a>
+<a class="text-peruvian-white/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Aviso Legal</a>
+<a class="text-peruvian-white/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Cookies</a>
+<a class="text-peruvian-white/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Contacto</a>
+</div>
+<div class="col-span-1 flex items-center justify-start md:justify-end">
+<p class="text-peruvian-white/60 text-sm">© 2024 Brasas Monroy. Sabor Auténtico Peruano.</p>
+</div>
+</footer>
+<script>
+        // Mobile Menu Logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNav = document.getElementById('mobileNav');
+        let menuOpen = false;
+
+        function toggleMobileMenu() {
+            menuOpen = !menuOpen;
+            if (menuOpen) {
+                mobileNav.classList.remove('hidden');
+                mobileNav.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+                mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-3xl">close</span>';
+            } else {
+                mobileNav.classList.add('hidden');
+                mobileNav.classList.remove('flex');
+                document.body.style.overflow = 'auto';
+                mobileMenuBtn.innerHTML = '<span class="material-symbols-outlined text-3xl">menu</span>';
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+
+        // Nav Scroll Effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('mainNav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-md');
+                nav.style.background = 'rgba(253, 245, 230, 0.95)';
+            } else {
+                nav.classList.remove('shadow-md');
+                nav.style.background = 'rgba(253, 245, 230, 0.85)';
+            }
+        });
+    </script>
+</body></html>

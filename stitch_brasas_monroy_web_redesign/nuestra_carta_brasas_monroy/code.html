@@ -1,0 +1,288 @@
+<!DOCTYPE html><html class="light" lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Menú - Brasas Monroy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#6e3900",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#b22222",
+                        "on-secondary": "#ffffff",
+                        "charcoal-black": "#2D2926",
+                        "outline-variant": "#e2beba",
+                        "surface-container-highest": "#e9e2d3",
+                        "on-tertiary-container": "#ffc8c5",
+                        "primary-fixed": "#ffdad6",
+                        "on-error-container": "#93000a",
+                        "background": "#fff8ef",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#ffdcc3",
+                        "on-surface": "#1e1b13",
+                        "surface-tint": "#b52424",
+                        "on-primary-container": "#ffc8c2",
+                        "primary": "#8f000d",
+                        "primary-fixed-dim": "#ffb4ac",
+                        "surface": "#fff8ef",
+                        "inverse-surface": "#343026",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#e1d9cb",
+                        "outline": "#8e706d",
+                        "secondary-fixed-dim": "#ffb77d",
+                        "on-primary-fixed-variant": "#92030f",
+                        "surface-bright": "#fff8ef",
+                        "deep-wood": "#4A2C2A",
+                        "inverse-primary": "#ffb4ac",
+                        "on-secondary-container": "#603100",
+                        "tertiary-container": "#9f3a3c",
+                        "tertiary-fixed-dim": "#ffb3b0",
+                        "surface-container": "#f5edde",
+                        "secondary-container": "#fd8b00",
+                        "on-secondary-fixed": "#2f1500",
+                        "surface-variant": "#e9e2d3",
+                        "surface-container-high": "#efe7d9",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#802226",
+                        "on-tertiary-fixed-variant": "#832428",
+                        "on-background": "#1e1b13",
+                        "secondary": "#904d00",
+                        "on-primary-fixed": "#410003",
+                        "tertiary-fixed": "#ffdad8",
+                        "on-surface-variant": "#5a403e",
+                        "surface-container-low": "#fbf3e4",
+                        "inverse-on-surface": "#f8f0e1",
+                        "peruvian-white": "#FFFFFF",
+                        "on-tertiary-fixed": "#410006",
+                        "error": "#ba1a1a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "base": "8px",
+                        "margin-desktop": "40px",
+                        "margin-mobile": "16px",
+                        "container-max": "1200px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Montserrat"],
+                        "label-lg": ["Montserrat"],
+                        "body-md": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-xl-mobile": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "headline-xl": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-xl-mobile": ["36px", { "lineHeight": "42px", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+        body {
+            background-color: #fdf5e6; /* Cream background */
+        }
+        
+        .card-shadow {
+            box-shadow: 0 10px 15px -3px rgba(74, 44, 42, 0.05), 0 4px 6px -2px rgba(74, 44, 42, 0.025);
+        }
+
+        .btn-gradient {
+            background: linear-gradient(135deg, #b22222 0%, #fd8b00 100%);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .btn-gradient:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(178, 34, 34, 0.3);
+        }
+
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Glassmorphism for Top Nav */
+        .glass-nav {
+            background-color: rgba(253, 245, 230, 0.85); /* Cream semi-transparent */
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="text-on-surface font-body-md antialiased">
+<!-- Top Navigation (JSON) -->
+<header class="glass-nav shadow-sm fixed top-0 left-0 w-full z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-20 max-w-container-max mx-auto border-b-0">
+<div class="font-headline-md text-headline-md font-bold text-primary">
+            Brasas Monroy
+        </div>
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-lg text-body-lg uppercase tracking-wider" href="#inicio">Inicio</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-body-lg text-body-lg uppercase tracking-wider" href="#menu">Menú</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-lg text-body-lg uppercase tracking-wider" href="#sobre-nosotros">Sobre nosotros</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-lg text-body-lg uppercase tracking-wider" href="#como-llegar">Cómo llegar</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-body-lg text-body-lg uppercase tracking-wider" href="#resenas">Reseñas</a>
+</nav>
+<button class="btn-gradient text-peruvian-white px-6 py-2 rounded-full font-label-lg text-label-lg uppercase tracking-wider">
+            Reservar
+        </button>
+</header>
+<!-- Main Content -->
+<main class="pt-32 pb-24 max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop space-y-16">
+<!-- Header Section -->
+<section class="text-center space-y-4">
+<h1 class="font-headline-xl text-headline-xl text-primary">Nuestro Menú</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                Descubre el auténtico sabor del Perú. Cada plato es una celebración de nuestra herencia culinaria, preparado con pasión y los ingredientes más frescos.
+            </p>
+<!-- Category Navigation (In-page) -->
+<div class="flex flex-wrap justify-center gap-4 mt-8">
+<a class="px-4 py-2 rounded-full border border-outline text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors font-label-sm text-label-sm uppercase" href="#entrantes">Entrantes</a>
+<a class="px-4 py-2 rounded-full border border-outline text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors font-label-sm text-label-sm uppercase" href="#principales">Principales</a>
+<a class="px-4 py-2 rounded-full border border-outline text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors font-label-sm text-label-sm uppercase" href="#postres">Postres</a>
+<a class="px-4 py-2 rounded-full border border-outline text-on-surface-variant hover:border-secondary hover:text-secondary transition-colors font-label-sm text-label-sm uppercase" href="#bebidas">Bebidas</a>
+</div>
+</section>
+<!-- Entrantes -->
+<section class="scroll-mt-32" id="entrantes">
+<h2 class="font-headline-lg text-headline-lg text-deep-wood border-b border-outline-variant/30 pb-4 mb-8">Entrantes</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Papa a la Huancaina -->
+<article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A beautifully plated Papa a la Huancaina dish featuring sliced boiled yellow potatoes draped in a rich, creamy yellow spicy cheese sauce. Garnished with a slice of hard-boiled egg and a single black olive on top, served on a crisp lettuce leaf upon a rustic white ceramic plate. The lighting is warm and natural, highlighting the creamy texture of the sauce against a subtle wooden table background in a cozy, authentic Peruvian dining setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI7I6pM7o01ZCXPwJeLoFor7-upMt-do6MXpO6EQLvxSL5QYyZfI_TLDJsYJQrXqwPXV3brs_3vysFfUfP3XSz5EIcrEtX27CSjxaztYHE_Ai1aL8kFCokqLoMfR9tRRNK5lbDtHTwzJMRAXl8xBgf62Zv0EIG7z4Gy-0g8tD0wZ0kB3ygMUn1UK52DSXo6WprPrr709_-8QemF1Kpf2ziH_BAXdknSDer7In7I88J1GLJ2aeNV_Um">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Papas a la Huancaína</h3>
+<span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4">9.50 €</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Rodajas de papa sancochada cubiertas con una cremosa salsa de ají amarillo, queso fresco y leche. Acompañada de huevo duro y aceitunas.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Lácteos</span>
+<span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Huevo</span>
+</div>
+</div>
+</article>
+<!-- Tamales -->
+<article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A steaming traditional Peruvian Tamal unwrapped slightly from its green banana leaf husk, revealing the textured yellow corn masa filled with seasoned pork, black olives, and sliced egg. Served on a dark slate plate with a small side of tangy salsa criolla (red onion relish) in a warm, dimly lit tavern atmosphere emphasizing authentic rustic dining." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrtzwUXlh5pxMQwPzIqgsCBZNBmEWK9aXTl-Ai_x4m6M8J_SEYKIwgDDecv62P_oK4-OI523JQeOtRwishldJNlN1M6u8tMdxpaHwBexBsV7dhAnsj0p581VMOvJfeXykqkcEHc76TYhdaoQmxSc9Pqq634G117hJdaTTEThxPkQqSpmA2N1rK-pqEMNDF61Lse4sT0yvewpX8VPFwBnKVT9TaPvgRNP-muwfBTs9MSL-np7iFCHnh">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Tamales Peruanos</h3>
+<span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4">8.00 €</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Masa de maíz rellena de carne de cerdo o pollo, huevo duro, aceitunas y maní, envuelta en hoja de plátano.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Maní</span>
+<span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Huevo</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Principales -->
+<section class="scroll-mt-32" id="principales">
+<h2 class="font-headline-lg text-headline-lg text-deep-wood border-b border-outline-variant/30 pb-4 mb-8">Platos Principales</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Pollo a la Brasa -->
+<article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group md:col-span-2 lg:col-span-1">
+<div class="h-64 lg:h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A mouth-watering quarter portion of Pollo a la Brasa (Peruvian roast chicken) with perfectly charred, golden-brown crispy skin. Served alongside a generous portion of thick-cut, golden french fries and a fresh side salad. Accompanying the dish are small ceramic bowls of vibrant yellow aji sauce and green chimichurri. The presentation is modern rustic, shot with warm, appetizing lighting that highlights the juiciness of the chicken." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA2Nj7inzFUjp5_61wUKEXlUlSa0872ot33dZ1UI_hQ0jM9EFJdOIwB2T4AQfHQZ5gD-1hoeAsuANwgvUOGN0m9IkS9sMQCPCAHd2RcF2l335b3Gmm3IJjR9bzd_RQyT2Ta6Ygz4AS7voMDacoY6OJ4RjJoHsXUsBadrO5LzBL3wl_PIZpDvr2UqsAJsqjMXdUQeLhHhwoqD-jNDgC3akKWXiTD0-PzX9_3E50tSSrnXPR2kZxZIRs">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Pollo a la Brasa</h3>
+<span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4">16.50 €</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Nuestro plato estrella. 1/4 de pollo asado al carbón con nuestra receta secreta de especias peruanas, servido con abundantes patatas fritas crujientes, ensalada fresca y nuestras salsas caseras.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Soja (salsas)</span>
+</div>
+</div>
+</article>
+<!-- Lomo Saltado -->
+<article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A dynamic, steaming plate of Lomo Saltado. Tender strips of beef tenderloin stir-fried in a wok with thick-cut red onions, bright red tomatoes, and fresh cilantro, all glistening in a savory soy-based sauce. The stir-fry is piled over crispy french fries and served with a neat mound of white rice on a rustic, artisanal plate. Warm, dramatic lighting capturing the 'wok hei' smoke rising off the dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1Stf7BGO5Hsv0lqIlZe9NxgLHpX5uQNRbGTXwd4jWLybF7tSJMmGpmh9wVUb0-b-CF74NmpCr6MHAZxxLX7Wu_3LMaiyvPq9xIcal1X-nc_sFciV6d9UMWnOiMkGlb_7yzQOfZbESHoDyjz4RgojBzqMFUVcMUYMaY20cyA2eUL6PVatzioVeGGlYrGtVy-kx6SaKuAURpODkgmV51o8Wm_gpjRbo526cdVOKTu4MVzU1uGt9gIxs">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Lomo Saltado</h3>
+<span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4">18.00 €</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Trozos de solomillo de ternera salteados al wok con cebolla roja, tomates frescos y ají amarillo, aderezados con salsa de soja. Servido con patatas fritas y arroz blanco.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Soja</span>
+<span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Gluten</span>
+</div>
+</div>
+</article>
+<!-- Arroz con Pollo -->
+<article class="bg-peruvian-white rounded-xl card-shadow overflow-hidden flex flex-col group">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A vibrant serving of Arroz con Pollo on a white plate. Green cilantro-infused rice cooked with peas, diced carrots, and red bell peppers, topped with a tender, braised chicken quarter. The dish is accompanied by a small side of salsa criolla. The setting is bright and warm, reflecting a cozy, authentic Peruvian family meal context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMqrPAkVdAaWmvzW2ljQCcSAYIWtqrTyF034azneetdA1jAZZF1QIDQq-3pHSWBiSZMZ4WIFkcQNH8lN5Ap3z5cw1zApP57Rdfw9tnEvrlVVQt4fRCF-nJh_PkLs2lgWT1dJhbpXZ3APwDWLR7Tae9od1A9o_dBSgjsl9Mm687OEb5M02262OYgOSXVNo9XKRRNK59Vofdwhs6yT1kFIquhh1nja5hVWZznhR6duo6ymJMMkigkwJk">
+</div>
+<div class="p-6 flex-grow flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-md text-headline-md text-on-surface">Arroz con Pollo</h3>
+<span class="font-label-lg text-label-lg text-secondary whitespace-nowrap ml-4">15.50 €</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4 flex-grow">
+                            Clásico peruano: arroz graneado cocido con un aderezo de cilantro fresco, chicha de jora, zanahorias, guisantes y pimientos, acompañado de una tierna pieza de pollo y salsa criolla.
+                        </p>
+<div class="flex flex-wrap gap-2 mt-auto">
+<span class="bg-[#CD5C5C] text-peruvian-white px-2 py-1 rounded font-label-sm text-label-sm">Sin Gluten</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer (JSON) -->
+<footer class="bg-deep-wood w-full py-12 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter border-t border-outline-variant/20">
+<div class="font-headline-lg text-headline-lg text-secondary-container md:col-span-4 mb-4">
+            Brasas Monroy
+        </div>
+<div class="md:col-span-4 text-peruvian-white font-body-md text-body-md mb-8">
+            © 2024 Brasas Monroy. Sabor Auténtico Peruano.
+        </div>
+<div class="md:col-span-4 flex flex-col md:flex-row gap-4">
+<a class="font-body-md text-body-md text-peruvian-white/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Privacidad</a>
+<a class="font-body-md text-body-md text-peruvian-white/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Aviso Legal</a>
+<a class="font-body-md text-body-md text-peruvian-white/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Cookies</a>
+<a class="font-body-md text-body-md text-peruvian-white/80 hover:text-secondary-fixed transition-colors opacity-90 hover:opacity-100" href="#">Contacto</a>
+</div>
+</footer>
+</body></html>
